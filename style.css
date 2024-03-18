@@ -1,0 +1,41 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template: repeat(5, 1fr)/ repeat(8, 1fr);
+    grid-template-areas: 
+    "sideBar sideBar topOfPage topOfPage topOfPage topOfPage topOfPage topOfPage"
+    "sideBar sideBar centerContent centerContent centerContent topRight topRight topRight"
+    "sideBar sideBar centerContent centerContent centerContent topRight topRight topRight"
+    "sideBar sideBar centerContent centerContent centerContent bottomRight bottomRight bottomRight"
+    "sideBar sideBar centerContent centerContent centerContent bottomRight bottomRight bottomRight"
+    ;
+}
+#sideBar {
+    display: grid;
+    grid-template: 3fr repeat(5,1fr) 3fr repeat(2, 1fr) 10fr / 1fr;
+    grid-area: sideBar;
+}
+#topOfPage {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-area: topOfPage;
+}
+#topHalf {
+    display: inline-flex;
+}
+#bottomHalf {
+    display: inline-flex;
+}
+#centerContent {
+    display: grid;
+    grid-area: centerContent;
+}
+#topRight {
+    display: grid;
+    grid-area: topRight;
+}
+#bottomRight {
+    display: grid;
+    grid-area: bottomRight;
+}
