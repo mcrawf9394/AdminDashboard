@@ -1,20 +1,26 @@
-body {
+html, body {
+    margin: 0;
+    padding: 0;
+  }  
+.page {
     width: 100vw;
     height: 100vh;
     display: grid;
-    grid-template: repeat(5, 1fr)/ repeat(8, 1fr);
+    grid-template: repeat(5, 1fr)/ repeat(5, 1fr);
     grid-template-areas: 
-    "sideBar sideBar topOfPage topOfPage topOfPage topOfPage topOfPage topOfPage"
-    "sideBar sideBar centerContent centerContent centerContent topRight topRight topRight"
-    "sideBar sideBar centerContent centerContent centerContent topRight topRight topRight"
-    "sideBar sideBar centerContent centerContent centerContent bottomRight bottomRight bottomRight"
-    "sideBar sideBar centerContent centerContent centerContent bottomRight bottomRight bottomRight"
+    "sideBar topOfPage topOfPage topOfPage topOfPage"
+    "sideBar centerContent centerContent topRight topRight"
+    "sideBar centerContent centerContent topRight topRight"
+    "sideBar centerContent centerContent bottomRight bottomRight"
+    "sideBar centerContent centerContent bottomRight bottomRight"
     ;
 }
 #sideBar {
     display: grid;
     grid-template: 3fr repeat(5,1fr) 3fr repeat(2, 1fr) 10fr / 1fr;
     grid-area: sideBar;
+    background-color: #38bdf8;
+    gap: 1rem;
 }
 .sideContent {
     display: inline-flex;
@@ -22,21 +28,27 @@ body {
 }
 h1 {
     margin-left: 1rem;
-    font-size: 1.5rem;
+    font-size: 2rem;
+    color: white;
 }
 #dash{
-    max-height: 4rem;
-    max-width: 4rem;
+    max-height: 5rem;
+    max-width: 5rem;
+    fill: white;
 }
 #home, #profile, #message, #history, #tasks, #communities, #settings, #support, #privacy {
-    max-width: 3rem;
-    max-height: 3rem;
+    max-width: 3.5rem;
+    max-height: 3.5rem;
+    fill: white;
+    margin-left: 1rem;
 }
 .sideBtn {
     background-color: transparent;
     border: none;
     cursor: pointer;
-    font-size: 1rem;
+    font-size: 1.7rem;
+    color: white;
+    margin-top: 1rem;
 }
 #topOfPage {
     display: grid;
