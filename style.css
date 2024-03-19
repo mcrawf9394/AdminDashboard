@@ -19,7 +19,7 @@ html, body {
     display: grid;
     grid-template: 3fr repeat(5,1fr) 3fr repeat(2, 1fr) 10fr / 1fr;
     grid-area: sideBar;
-    background-color: #38bdf8;
+    background-color: #0284c7;
     gap: 1rem;
 }
 .sideContent {
@@ -27,6 +27,7 @@ html, body {
     align-items: start;
 }
 h1 {
+    margin-top: 2rem;
     margin-left: 1rem;
     font-size: 2rem;
     color: white;
@@ -35,6 +36,8 @@ h1 {
     max-height: 5rem;
     max-width: 5rem;
     fill: white;
+    margin-left: 1rem;
+    margin-top: 1rem;
 }
 #home, #profile, #message, #history, #tasks, #communities, #settings, #support, #privacy {
     max-width: 3.5rem;
@@ -56,10 +59,56 @@ h1 {
     grid-area: topOfPage;
 }
 #topHalf {
-    display: inline-flex;
+    display: grid;
+    width: 100%;
+    align-items: center;
+    grid-template: 1fr / 1fr 7fr 3fr 1fr 2fr;
+}
+#search {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    width: 3rem;
+    height: 3rem;
+    justify-self: right;
+    margin-right: 1rem;
+}
+#searchBar {
+    background-color: #e4e4e7;
+    height: 2rem;
+}
+#bell {
+    height: 3rem;
+    width: 3rem;
+    justify-self: right;
+}
+#profilePic, #profilePic2 {
+    height: 3rem;
+    width: 3rem;
+    justify-self: center;
+}
+h2 {
+    text-align: left;
+    margin-left: 1rem;
 }
 #bottomHalf {
-    display: inline-flex;
+    display: grid;
+    grid-template: 1fr / 1fr 6fr 1fr 1fr 1fr;
+    align-items: center;
+}
+#profilePic2 {
+    justify-self: right;
+    margin-right: 1rem;
+}
+.bottomButton {
+    background-color: #0284c7;
+    border-radius: 2rem;
+    border: none;
+    height: 4rem;
+    width: 8rem;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: bold;
 }
 #centerContent {
     display: grid;
