@@ -82,7 +82,7 @@ h1 {
     width: 3rem;
     justify-self: right;
 }
-#profilePic, #profilePic2 {
+#profilePic {
     height: 3rem;
     width: 3rem;
     justify-self: center;
@@ -99,6 +99,15 @@ h2 {
 #profilePic2 {
     justify-self: right;
     margin-right: 1rem;
+    height: 5rem;
+    width: 5rem;
+}
+p {
+    margin-bottom: 0%;
+}
+h3 {
+    margin-top: .5%;
+    font-size: 1.3rem;
 }
 .bottomButton {
     background-color: #0284c7;
