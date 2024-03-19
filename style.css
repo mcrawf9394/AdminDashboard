@@ -76,6 +76,8 @@ h1 {
 #searchBar {
     background-color: #e4e4e7;
     height: 2rem;
+    border-radius: 2rem;
+    border: none;
 }
 #bell {
     height: 3rem;
@@ -158,12 +160,32 @@ p {
     cursor: pointer;
 }
 #topRight {
-    display: grid;
     grid-area: topRight;
     background-color: #e4e4e7;
 }
-#bottomRight {
+.announcementsGrid, .trendingGrid {
     display: grid;
+    grid-template: 1fr / repeat(3. 1fr);
+    gap: 1rem;
+}
+.announcements, .trending {
+    background-color: white;
+    margin-right: 1rem;
+    border-radius: 2rem;
+}
+#bottomRight {
     grid-area: bottomRight;
     background-color: #e4e4e7;
+}
+.trendingGrid {
+    grid-template: 1fr / repeat(4. 1fr);
+}
+.trending {
+    display: inline-flex;
+    align-items: center;
+}
+.trendingPic {
+    height: 3rem;
+    width: 3rem;
+    margin-left: 1rem;
 }
