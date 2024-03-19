@@ -9,10 +9,10 @@ html, body {
     grid-template: repeat(5, 1fr)/ repeat(5, 1fr);
     grid-template-areas: 
     "sideBar topOfPage topOfPage topOfPage topOfPage"
-    "sideBar centerContent centerContent topRight topRight"
-    "sideBar centerContent centerContent topRight topRight"
-    "sideBar centerContent centerContent bottomRight bottomRight"
-    "sideBar centerContent centerContent bottomRight bottomRight"
+    "sideBar centerContent centerContent centerContent topRight"
+    "sideBar centerContent centerContent centerContent topRight"
+    "sideBar centerContent centerContent centerContent bottomRight"
+    "sideBar centerContent centerContent centerContent bottomRight"
     ;
 }
 #sideBar {
@@ -102,8 +102,9 @@ h2 {
     height: 5rem;
     width: 5rem;
 }
-p {
+h5 {
     margin-bottom: 0%;
+
 }
 h3 {
     margin-top: .5%;
@@ -118,16 +119,51 @@ h3 {
     color: white;
     font-size: 1.3rem;
     font-weight: bold;
+    cursor: pointer;
 }
 #centerContent {
-    display: grid;
     grid-area: centerContent;
+    background-color: #e4e4e7;
+}
+#centerContentGrid {
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+    gap: 1.7rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.centerGridCells {
+    background-color: white;
+    border-left: solid .5rem #fbbf24;
+    height: 19.5rem;
+    width: 42.5rem;
+    border-radius: 2rem;
+}
+h4 {
+    margin-left: 1rem;
+}
+p {
+    margin-left: 1rem;
+    font-size: .85rem;
+}
+.buttonsGroup {
+    margin-top: 2rem;
+    margin-left: 32.5rem;
+}
+.projectButton {
+    height: 3rem;
+    width: 3rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
 }
 #topRight {
     display: grid;
     grid-area: topRight;
+    background-color: #e4e4e7;
 }
 #bottomRight {
     display: grid;
     grid-area: bottomRight;
+    background-color: #e4e4e7;
 }
